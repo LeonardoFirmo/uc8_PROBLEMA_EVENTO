@@ -1,14 +1,13 @@
 // Entrada de Dados do usuário e data do evento que quer participar
-let dataUsuario = "23/04/2022";
+let dataUsuario = new Date("2022-04-01T00:00");
 let nome = "Leonardo";
 let idade = 27;
 let TipodeUsuario = "palestrante";
 
 
 
-// Data atual Convertida para o padrão BR
-let data = new Date();
-dataFormatada = data.toLocaleDateString('pt-BR', {timeZone: 'UTC'});
+// Data atual 
+let dataHoje = new Date();
 
 
 //Lista atual de participantes e palestrantes 
@@ -20,7 +19,7 @@ let totalParticipantes = [participantes.length + palestrantes.length];
 
 
 // COMPARAÇÃO DE  DATA
-if (dataUsuario > dataFormatada ){
+if (dataUsuario >= dataHoje ){
     console.log("Data do evento selecionada disponível")
 }else{
     console.log("Data inválida,insira uma data correta!")
@@ -57,10 +56,6 @@ if (totalParticipantes <= 100){
     
 
 
-
-
-
-
   //FOR PARA IMPRIMIR LISTA DE PARTICIPANTES E PALESTRANTES SEPARADAS
     console.log("Lista de Palestrantes")
     for (let index = 0; index < palestrantes.length; index++) {
@@ -75,21 +70,7 @@ if (totalParticipantes <= 100){
         
     }
 
-    
-
-
-
-
 
 }else{
     console.log("Cadastro não permitido,não há mais ingressos.")
 };
-
-
-
-
-
-
-
-
-
