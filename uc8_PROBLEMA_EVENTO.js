@@ -6,7 +6,7 @@ let TipodeUsuario = "palestrante";
 
 
 
-// Data atual 
+// Data atual   
 let dataHoje = new Date();
 
 
