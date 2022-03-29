@@ -1,5 +1,5 @@
 // Entrada de Dados do usuário e data do evento que quer participar
-let dataUsuario = new Date("2022-04-01T00:00");
+let dataUsuario = new Date(2022, 5, 23)
 let nome = "Leonardo";
 let idade = 27;
 let TipodeUsuario = "palestrante";
