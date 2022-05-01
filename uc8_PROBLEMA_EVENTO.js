@@ -2,7 +2,7 @@
 let dataUsuario = new Date(2022, 5, 23);
 let nome = "Leonardo";
 let idade = 27;
-let TipodeUsuario = "participante";
+let tipodeUsuario = "participante";
 
 // Data atual   
 let dataHoje = new Date();
@@ -36,7 +36,7 @@ if (dataUsuario > dataHoje ){
 
                 // switch de COMPARAÇAO ENTRE PARTICIPANTE E PALESTRANTE / E adicionando o usuario como novo participante ou palestrante
              
-                    switch (TipodeUsuario) {
+                    switch (tipodeUsuario) {
                      case "palestrante":
                         palestrantes.push(nome);
                         console.log("Você foi cadastrado como Palestrante!")
